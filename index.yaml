@@ -3,7 +3,17 @@ entries:
   first-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-04-06T12:23:30.816120134+03:00"
+    created: "2023-04-06T13:44:44.117152021+03:00"
+    description: A Helm chart for Kubernetes
+    digest: 5d6d4385c3ae35156173d4cd101e5bcb0f4c3db497958b811110ce7dbcab0488
+    name: first-app
+    type: application
+    urls:
+    - https://vitaliget.github.io/helm-23-23/releases/first-app-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-04-06T13:44:44.11213167+03:00"
     description: A Helm chart for Kubernetes
     digest: 7b60d08b0b2007450ad05454dcd8475077c054599fb4f3d4077fe45027b07277
     name: first-app
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://vitaliget.github.io/helm-23-23/releases/first-app-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-06T12:23:30.789798364+03:00"
+generated: "2023-04-06T13:44:44.107106866+03:00"

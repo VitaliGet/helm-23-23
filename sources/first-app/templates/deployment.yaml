@@ -47,7 +47,14 @@ spec:
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-      {{- with .Values.nodeSelector }}
+            {{- with .Values.nodeSelector }}
+          volumeMounts:
+          - name: "persistent-helm-storage"
+            mountPath: "/var/www/html"
+      volumes:
+      - name: "persistent-helm-storage"
+        persistentVolumeClaim:
+          claimName: {{ include "first-app.fullname" . }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
       {{- end }}
